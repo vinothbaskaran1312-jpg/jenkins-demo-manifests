@@ -1,4 +1,4 @@
-cat > deployment.yaml << 'EOF'
+#cat > deployment.yaml << 'EOF'
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: vinothbaskaran1312/jenkins-demo-app:latest
+        image: vinothbaskaran1985/jenkins-demo-app:latest
         ports:
         - containerPort: 5000
         livenessProbe:
@@ -59,4 +59,4 @@ spec:
             name: demo-app-svc
             port:
               number: 80
-EOF
+#EOF
