@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: vinothbaskaran1985/jenkins-demo-app:11
+        image: vinothbaskaran1985/jenkins-demo-app:14
         ports:
         - containerPort: 5000
         livenessProbe:
