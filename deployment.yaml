@@ -16,13 +16,13 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: vinothbaskaran1985/jenkins-demo-app:latest
+        image: vinothbaskaran1985/java-maven-app:10
         ports:
-        - containerPort: 5000
+        - containerPort: 8080
         livenessProbe:
           httpGet:
             path: /health
-            port: 5000
+            port: 8080
           initialDelaySeconds: 10
           periodSeconds: 10
 ---
@@ -36,7 +36,7 @@ spec:
     app: demo-app
   ports:
   - port: 80
-    targetPort: 5000
+    targetPort: 8080
   type: ClusterIP
 ---
 apiVersion: networking.k8s.io/v1
