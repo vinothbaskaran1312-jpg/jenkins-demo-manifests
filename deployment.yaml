@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: vinothbaskaran1985/java-maven-app:10
+        image: vinothbaskaran1985/java-maven-app:18
         ports:
         - containerPort: 8080
         livenessProbe:
